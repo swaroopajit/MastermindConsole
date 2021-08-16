@@ -119,7 +119,7 @@ class MasterMind
         else
             etr = etr.split("")
             for i in 0..etr.length-1 do
-                if !(etr[i].match?(/[[:digit:]]/))
+                if !(etr[i].match?(/[1-6]/))
                     puts "You can only enter digits!"
                     return false
                 end
